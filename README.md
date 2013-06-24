@@ -23,3 +23,5 @@ Preparation:
   to demonstrate the examples. Note that examples can be copy/pasted from the
   slides.
 * Customise your Keynote presenters display to show a large area for the notes
+
+Copyright © 2013 Neo Technology
