@@ -48,5 +48,5 @@ if (-not $Force -and
 
 $drive = Get-Drive $TargetDrive
 Format-Drive $drive Neo4j
-gci (Join-Path $PSScriptRoot .\USBKEY) | cpi -Destination D: -Recurse
+gci (Join-Path $PSScriptRoot .\USBKEY) | cpi -Destination $TargetDrive -Recurse
 [System.Media.SystemSounds]::Asterisk.Play();
