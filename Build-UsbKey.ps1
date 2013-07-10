@@ -33,14 +33,6 @@ function Format-Drive {
     $null = $drive.Format("FAT32", $quick, 4096, $label, $compressed)
 }
 
-function Dismount-Drive {
-    param($drive)
-    # http://msdn.microsoft.com/en-us/library/windows/desktop/aa390368(v=vs.85).aspx
-    $force = $false
-    $permanent = $false
-    $null = $drive.Dismount($force, $permanent)
-}
-
 if (-not $Force -and
     @(gci $TargetDrive).Length -ne 0) {
     throw "Drive contains files but -Force not supplied; aborting"
