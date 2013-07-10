@@ -1,4 +1,4 @@
-#requires -version 2.0 -runasadministrator
+#requires -version 4.0 -runasadministrator
 [CmdletBinding()]
 param (
     [Parameter(Mandatory=$true)]
